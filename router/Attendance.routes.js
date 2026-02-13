@@ -57,7 +57,7 @@ if (!fs.existsSync(TEMP_UPLOAD_DIR)) fs.mkdirSync(TEMP_UPLOAD_DIR, { recursive: 
 
 // ✅ 2. Mark attendance using face recognition
 // Example: POST /api/attendance/mark-face/:attendanceId
-router.post("/mark-face/:attendanceId", verifyJWT,upload.array("images",4), markAttendanceWithFace);
+router.post("/mark-face/:attendanceId", verifyJWT,upload.array("images",6), markAttendanceWithFace);
 router.get("/my",verifyJWT, verifyJWT,getMyAttendance);
 router.get("/session/:id", verifyJWT,getSessionDetails);
 // I will add timetable route later
