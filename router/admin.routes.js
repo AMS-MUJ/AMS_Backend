@@ -9,4 +9,4 @@ router.post("/create-combined-section", autoCreateCommonSection);
 
 
 
-export default router;
+export default Adminrouter;
