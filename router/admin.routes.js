@@ -4,8 +4,8 @@ import { migrateSubmissionsToUsers,autoCreateCommonSection } from "../controller
 const Adminrouter = express.Router();
 
 // PROTECT THIS ROUTE! (Use your verifyJWT or Admin middleware)
-router.post("/run-migration", migrateSubmissionsToUsers);
-router.post("/create-combined-section", autoCreateCommonSection);
+Adminrouter.post("/run-migration", migrateSubmissionsToUsers);
+Adminrouter.post("/create-combined-section", autoCreateCommonSection);
 
 
 
