@@ -20,7 +20,7 @@ import Courserouter from './router/Course.Routes.js';
 import attendance from './router/Attendance.routes.js';
 import loginRoute from './router/login.routes.js';
 import dashboardRouter from './router/dashboard.route.js';
-import Adminrouter from './router/Admin.routes.js';
+import Adminrouter from './router/admin.routes.js';
 // declare routes
 app.use('/api/v1/section',router);
 app.use('/api/v1/dashboard',dashboardRouter)
